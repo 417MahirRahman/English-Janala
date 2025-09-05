@@ -141,3 +141,95 @@ document.getElementById("btn-search").addEventListener("click",()=>{
     displaylvlword(filterWords);
   })
 })
+
+//FAQ part
+const Plus = (id) => {
+  console.log((`plus_${id}`))
+  if(id == 1){
+    document.getElementById(`plus_${id}`).classList.add("hidden");
+    document.getElementById(`minus_${id}`).classList.remove("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+    faqAns = document.createElement("p");
+    faqAns.innerHTML = `<p class="font-normal">Ans: You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+    `
+    faqContainer.append(faqAns);
+
+  }else if(id == 2){
+    document.getElementById(`plus_${id}`).classList.add("hidden");
+    document.getElementById(`minus_${id}`).classList.remove("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+    faqAns = document.createElement("p");
+    faqAns.innerHTML = `<p class="font-normal">Ans: Yes, you don't have to buy any kind of Subscription.</p>
+    `
+    faqContainer.append(faqAns);
+  }else if(id == 3){
+    document.getElementById(`plus_${id}`).classList.add("hidden");
+    document.getElementById(`minus_${id}`).classList.remove("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+    faqAns = document.createElement("p");
+    faqAns.innerHTML = `<p class="font-normal">Ans: No, it's an open website for practice.</p>
+    `
+    faqContainer.append(faqAns);
+  }else if(id == 4){
+    document.getElementById(`plus_${id}`).classList.add("hidden");
+    document.getElementById(`minus_${id}`).classList.remove("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+    faqAns = document.createElement("p");
+    faqAns.innerHTML = `<p class="font-normal">Ans: By practicing a lot.</p>
+    `
+    faqContainer.append(faqAns);
+  }else if(id == 5){
+    document.getElementById(`plus_${id}`).classList.add("hidden");
+    document.getElementById(`minus_${id}`).classList.remove("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+    faqAns = document.createElement("p");
+    faqAns.innerHTML = `<p class="font-normal">Ans: No, we do not provide any kind of Certificates but you can improve your vocabulary using our website.</p>
+    `
+    faqContainer.append(faqAns);
+  }
+};
+
+const Minus = (id) => {
+  if(id == 1){
+    document.getElementById(`plus_${id}`).classList.remove("hidden");
+    document.getElementById(`minus_${id}`).classList.add("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+  }else if(id == 2){
+    document.getElementById(`plus_${id}`).classList.remove("hidden");
+    document.getElementById(`minus_${id}`).classList.add("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+  }else if(id == 3){
+    document.getElementById(`plus_${id}`).classList.remove("hidden");
+    document.getElementById(`minus_${id}`).classList.add("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+  }else if(id == 4){
+    document.getElementById(`plus_${id}`).classList.remove("hidden");
+    document.getElementById(`minus_${id}`).classList.add("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+  }else if(id == 5){
+    document.getElementById(`plus_${id}`).classList.remove("hidden");
+    document.getElementById(`minus_${id}`).classList.add("hidden");
+
+    faqContainer = document.getElementById(`faq_ans_${id}`);
+    faqContainer.innerHTML = "";
+  }
+}
+

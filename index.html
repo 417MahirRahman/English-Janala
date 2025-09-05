@@ -64,19 +64,17 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href=""
+                <a href="#FAQ"
                   ><i class="fa-solid fa-circle-question"></i>FAQ</a
                 >
               </li>
               <li>
-                <a href=""
+                <a href="#learn"
                   ><i class="fa-solid fa-book-open"></i>Learn</a
                 >
               </li>
               <li>
-                <a href=""
-                  ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
-                >
+                <a href="#about_us">About Us</a>
               </li>
             </ul>
           </div>
@@ -89,13 +87,13 @@
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1 space-x-4">
             <li>
-              <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+              <a href="#FAQ" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
             </li>
             <li>
-             <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a>
+             <a href="#learn" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a>
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+              <a href="#about_us" class="btn btn-outline btn-primary">About Us</a>
             </li>
           </ul>
         </div>
@@ -103,7 +101,7 @@
     
     <section class="flex flex-col-reverse md:flex-row gap-10 items-center py-5 w-11/12 mx-auto">
       <div class="content flex-1 text-center md:text-left">
-        <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!!</h2>
+        <h2 class="text-2xl md:text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is Easy!!</h2>
         <p class="font-Bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
       </div>
       <div class="image flex-1">
@@ -111,8 +109,8 @@
       </div>
     </section>
 
-    <section>
-      <h2 class="text-4xl font-bold mb-8 text-center">
+    <section id="learn">
+      <h2 class="text-2xl md:text-4xl font-bold mb-8 text-center">
         <span class="text-sky-400">Let's</span> Learn Vocabulary
       </h2>
       <div id="lvl-container" class="flex gap-5 flex-wrap justify-center">
@@ -137,8 +135,8 @@
 
     <section id="word-container" class="bg-gray-100 p-5 w-11/12 mx-auto md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-5 mt-10 rounded-2xl">
       <div class="text-center col-span-full py-10 space-y-6 font-Bangla">
-        <p class="text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
-        <h2 class="text-4xl font-bold">একটি Lesson Select করুন।</h2>
+        <p class="md:text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
+        <h2 class="text-2xl md:text-4xl font-bold">একটি Lesson Select করুন।</h2>
       </div>
     </section>
 
@@ -158,32 +156,82 @@
       </div>
     </dialog>
 
-    <section class="p-5 w-11/12 mx-auto mt-20 font-semibold text-sm">
-       <h1 class="font-bold text-center text-lg lg:text-3xl mb-10"><span class="text-sky-400">Frequently</span> Asked Questions</h1>
-       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center">
-        <h2>1. How can I start learning English on this website?</h2>
-        <i class="fa-solid fa-plus"></i>
+    <section id="FAQ" class="p-5 w-11/12 mx-auto mt-20 font-semibold text-sm">
+       <h1 class="font-bold text-center text-xl md:text-3xl mb-10"><span class="text-sky-400">Frequently</span> Asked Questions</h1>
+       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center mt-5">
+        <div>
+          <h2>1. How can I start learning English on this website?</h2>
+          <div id="faq_ans_1"></div>
+        </div>
+        <div>
+          <div id="plus_1" class="">
+            <i onclick="Plus(1)" class="fa-solid fa-plus hover:cursor-pointer"></i>
+          </div>
+          <div id="minus_1" class="hidden">
+            <i onclick="Minus(1)" class="fa-solid fa-minus hover:cursor-pointer"></i>
+          </div>
+        </div>
       </div>
       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center mt-5">
-        <h2>2. Is this website free to use?</h2>
-        <i class="fa-solid fa-plus"></i>
+        <div>
+          <h2>2. Is this website free to use?</h2>
+          <div id="faq_ans_2"></div>
+        </div>
+        <div>
+          <div id="plus_2" class="">
+            <i onclick="Plus(2)" class="fa-solid fa-plus hover:cursor-pointer"></i>
+          </div>
+          <div id="minus_2" class="hidden">
+            <i onclick="Minus(2)" class="fa-solid fa-minus hover:cursor-pointer"></i>
+          </div>
+        </div>
       </div>
       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center mt-5">
-        <h2>3. Do I need to create an account?</h2>
-        <i class="fa-solid fa-plus"></i>
+        <div>
+          <h2>3. Do I need to create an account?</h2>
+          <div id="faq_ans_3"></div>
+        </div>
+        <div>
+          <div id="plus_3" class="">
+            <i onclick="Plus(3)" class="fa-solid fa-plus hover:cursor-pointer"></i>
+          </div>
+          <div id="minus_3" class="hidden">
+            <i onclick="Minus(3)" class="fa-solid fa-minus hover:cursor-pointer"></i>
+          </div>
+        </div>
       </div>
       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center mt-5">
-        <h2>4. How can I build my English vocabulary?</h2>
-        <i class="fa-solid fa-plus"></i>
+        <div>
+          <h2>4. How can I build my English vocabulary?</h2>
+          <div id="faq_ans_4"></div>
+        </div>
+        <div>
+          <div id="plus_4" class="">
+            <i onclick="Plus(4)" class="fa-solid fa-plus hover:cursor-pointer"></i>
+          </div>
+          <div id="minus_4" class="hidden">
+            <i onclick="Minus(4)" class="fa-solid fa-minus hover:cursor-pointer"></i>
+          </div>
+        </div>
       </div>
       <div class="bg-gray-100 rounded-xl p-5 flex justify-between items-center mt-5">
-        <h2>5. Do you offer certificates for completed courses?</h2>
-        <i class="fa-solid fa-plus"></i>
+        <div>
+          <h2>5. Do you offer certificates for completed courses?</h2>
+          <div id="faq_ans_5"></div>
+        </div>
+        <div>
+          <div id="plus_5" class="">
+            <i onclick="Plus(5)" class="fa-solid fa-plus hover:cursor-pointer"></i>
+          </div>
+          <div id="minus_5" class="hidden">
+            <i onclick="Minus(5)" class="fa-solid fa-minus hover:cursor-pointer"></i>
+          </div>
+        </div>
       </div>
     </section>
 
 
-    <footer class="h-[200px] border-t-2 border-red-100 flex justify-between items-center mt-25 px-1 md:px-5">
+    <footer id="about_us" class="h-[200px] border-t-2 border-red-100 flex justify-between items-center mt-25 px-1 md:px-5">
       <div class="">
         <div class="flex items-center gap-1 mb-3">
             <span class="font-bold">English</span>
